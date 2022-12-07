@@ -2,7 +2,7 @@
     "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
     "contentVersion": "1.0.0.0",
     "metadata": {
-        "title": "AS-Compromised-Machine-Tagging", 
+        "title": "Test Playbook", 
         "description": "This playbook is intended to be run from a Microsoft Sentinel incident. It will match the hosts from an incident with machines in Microsoft Defender and tag those machines as compromised.",
         "lastUpdateTime": "2022-09-29T18:18:05Z",
         "entities": ["Host"], 
