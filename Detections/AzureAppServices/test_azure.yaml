@@ -1,7 +1,7 @@
 id: c2da1106-bfe4-4a63-bf14-5ab731301234
 name: TestFile
 description: |
-  'test 2'
+  'test 3'
 severity: Informational
 requiredDataConnectors: []
 queryFrequency: 1d
