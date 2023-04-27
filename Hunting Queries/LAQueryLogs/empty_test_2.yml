@@ -1,0 +1,37 @@
+id: 4fdf7638-6b71-44cb-82b9-ed73c4432234
+name: Test Empty Sigma 5
+description: |
+  'Test Empty sigma 4'
+severity: Medium
+requiredDataConnectors:
+  - connectorId: AzureActivity
+    dataTypes:
+      - AzureActivity
+queryFrequency: 1h
+queryPeriod: 2h
+triggerOperator: gt
+triggerThreshold: 0
+tactics:
+  - DefenseEvasion
+relevantTechniques:
+  - T1562.008
+entityMappings:
+  - entityType: Account
+    fieldMappings:
+      - identifier: Name
+        columnName: Caller
+  - entityType: IP
+    fieldMappings:
+      - identifier: Address
+        columnName: CallerIpAddress
+version: 1.0.1
+kind: Scheduled
+metadata:
+    source:
+        kind: Community
+    author:
+        name: KennethMLdk
+    support:
+        tier: Community
+    categories:
+        domains: [ "Security - Others", "Platform" ]
