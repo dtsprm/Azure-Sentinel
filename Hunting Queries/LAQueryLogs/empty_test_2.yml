@@ -9,7 +9,7 @@ requiredDataConnectors:
       - AzureActivity
 queryFrequency: 1h
 queryPeriod: 2h
-query: 
+query: ""
 triggerOperator: gt
 triggerThreshold: 0
 tactics:
