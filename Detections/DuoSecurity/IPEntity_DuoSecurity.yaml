@@ -4,7 +4,7 @@ description: |
   'Identifies a match in DuoSecurity from any IP IOC from TI'
 severity: Medium
 requiredDataConnectors:
-  - connectorId: ThreatIntelligence
+  - connectorId: ThreatITestsad
     dataTypes:
       - ThreatIntelligenceIndicator
   - connectorId: ThreatIntelligenceTaxii
