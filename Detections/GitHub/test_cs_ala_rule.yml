@@ -1,0 +1,17 @@
+id: ccfaa74f-e067-494c-8cf0-91a0cdcc4326
+name: test_cs_ala_rule
+description: |
+  'This alerts when there is a new security vulnerability in a GitHub repository.'
+severity: Informational
+requiredDataConnectors: []
+queryFrequency: 1h
+queryPeriod: 1h
+triggerOperator: gt
+triggerThreshold: 0
+query: |
+
+  GitHubRepo
+  | where Action == "vulnerabilityAlert"
+  | project TimeGenerated, DismmisedAt, Reason, vulnerableManifestFilename, Description, Link, PublishedAt, Severity, Summary
+version: 1.0.0
+kind: Scheduled
